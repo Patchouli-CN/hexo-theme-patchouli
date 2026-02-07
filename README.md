@@ -6,9 +6,9 @@
   <img alt="NPM Downloads" src="https://img.shields.io/npm/dm/hexo-theme-reimu">
   <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/D-Sketon/hexo-theme-reimu">
 
-💘 博麗 霊夢 💘
+🌙 パチュリー·ノーレッジ 🌙
 
-[演示网站](https://d-sketon.github.io) | [开发日志](https://d-sketon.github.io/20240601/hexo-theme-reimu-log/)
+[演示网站](https://patchouli-cn.github.io) | [开发日志](https://d-sketon.github.io/20240601/hexo-theme-reimu-log/)
 
 简体中文 | [English](https://github.com/D-Sketon/hexo-theme-reimu/blob/main/README.en.md)
 

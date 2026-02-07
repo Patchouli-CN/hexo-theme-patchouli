@@ -1,5 +1,5 @@
 name: Bug Report
-description: Report a bug encountered while using reimu
+description: Report a bug encountered while using patchouli
 labels: ["bug"]
 body:
   - type: "textarea"
@@ -47,9 +47,9 @@ body:
     validations:
       required: false
     attributes:
-      label: Your Site's `_config.reimu.yml` (optional)
+      label: Your Site's `_config.patchouli.yml` (optional)
       description: |
-        Please paste your `_config.reimu.yml` here (Note: Do not include sensitive information)
-      placeholder: _config.reimu.yml
+        Please paste your `_config.patchouli.yml` here (Note: Do not include sensitive information)
+      placeholder: _config.patchouli.yml
       # value: |
       render: yaml

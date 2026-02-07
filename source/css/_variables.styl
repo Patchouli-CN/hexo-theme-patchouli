@@ -1,49 +1,53 @@
 // Colors
 :root {
-  --red-0: unquote(light-red-0);
-  --red-1: unquote(light-red-1);
-  --red-2: unquote(light-red-2);
-  --red-3: unquote(light-red-3);
-  --red-4: unquote(light-red-4);
-  --red-5: unquote(light-red-5);
-  --red-5-5: unquote(light-red-5-5);
-  --red-6: unquote(light-red-6);
+  // ===== 帕秋莉浅色模式配色 =====
+  --red-0: #6a0dad;
+  --red-1: #8A2BE2;          // 主强调色（链接、按钮）
+  --red-2: #9a4de3;
+  --red-3: #b19cd9;          // 边框、分隔线
+  --red-4: #d8c2f0;
+  --red-5: #f0e6ff;
+  --red-5-5: #f8f4ff;
+  --red-6: #fcfaff;
+
   --grey-9: #888;
   --grey-7: var(--color-default);
-  --color-archive-year: black;
-  --color-default: #444;
+  --color-archive-year: #2c1e5f;
+  --color-default: #2c1e5f;           // 文字主色（带紫调黑）
   --color-border: var(--red-3);
   --color-link: var(--red-1);
-  --color-background: #eee;
-  --color-code-background: #f8f8f8;
-  --color-header-background: rgba(255, 255, 255, 0.9);
-  --color-footer-background: #fff;
-  --color-mobile-nav-background: #fff;
-  --color-wrap: #fff;
-  --color-sticky: #fff;
-  --color-h2-border: #eee;
+  --color-background: #f9f7ff;        // 页面背景
+  --color-code-background: #faf8ff;
+  --color-header-background: rgba(255, 255, 255, 0.95);
+  --color-footer-background: #ffffff;
+  --color-mobile-nav-background: #ffffff;
+  --color-wrap: #ffffff;
+  --color-sticky: #ffffff;
+  --color-h2-border: #f0e6ff;
   --color-meta-shadow: var(--red-6);
-  --color-hover-shadow: rgba(120, 120, 120, 0.15);
-  --color-h2-after: var(--red-1);
-  --color-red-6-shadow: unquote(light-color-red-6-shadow);
-  --color-red-3-shadow: unquote(light-color-red-3-shadow);
-  --highlight-nav: unquote(light-highlight-nav);
-  --highlight-scrollbar: unquote(light-highlight-scrollbar);
-  --highlight-background: unquote(light-highlight-background);
-  --highlight-selection: unquote(light-highlight-selection);
-  --highlight-foreground: unquote(light-highlight-foreground);
-  --highlight-comment: unquote(light-highlight-comment);
-  --highlight-red: unquote(light-highlight-red);
-  --highlight-orange: unquote(light-highlight-orange);
-  --highlight-yellow: unquote(light-highlight-yellow);
-  --highlight-green: unquote(light-highlight-green);
-  --highlight-aqua: unquote(light-highlight-aqua);
-  --highlight-blue: unquote(light-highlight-blue);
-  --highlight-purple: unquote(light-highlight-purple);
-  --highlight-deletion: unquote(light-highlight-deletion);
-  --highlight-deletion-bg: unquote(light-highlight-deletion-bg);
-  --highlight-addition: unquote(light-highlight-addition);
-  --highlight-addition-bg: unquote(light-highlight-addition-bg);
+  --color-hover-shadow: rgba(138, 43, 226, 0.15);
+  --color-h2-after: var(--red-1);     // h2 下划线高亮
+  --color-red-6-shadow: rgba(138, 43, 226, 0.6);
+  --color-red-3-shadow: rgba(177, 156, 217, 0.4);
+
+  // 代码高亮 - 使用紫色系
+  --highlight-nav: #8A2BE2;
+  --highlight-scrollbar: #b19cd9;
+  --highlight-background: #f8f4ff;
+  --highlight-selection: rgba(138, 43, 226, 0.3);
+  --highlight-foreground: #2c1e5f;
+  --highlight-comment: #9a4de3;
+  --highlight-red: #ff6b6b;           // 保留错误红（可选）
+  --highlight-orange: #ff9e6d;
+  --highlight-yellow: #ffd166;
+  --highlight-green: #06d6a0;
+  --highlight-aqua: #118ab2;
+  --highlight-blue: #073b4c;
+  --highlight-purple: #8A2BE2;        // 紫色用于关键字
+  --highlight-deletion: #ff6b6b;
+  --highlight-deletion-bg: rgba(255, 107, 107, 0.1);
+  --highlight-addition: #06d6a0;
+  --highlight-addition-bg: rgba(6, 214, 160, 0.1);
 
   if (cursor-enabled) {
     --cursor-default: url(cursor-default), auto;
@@ -67,46 +71,52 @@
 
 [data-theme='dark'] {
   &:root {
-    --red-0: var(--red-1);
-    --red-4: unquote(dark-red-4);
-    --red-5: unquote(dark-red-5);
-    --red-5-5: unquote(dark-red-5-5);
-    --red-6: unquote(dark-red-6);
-    --color-archive-year: #999;
-    --color-default: #999;
+    // ===== 帕秋莉深色模式配色 =====
+    --red-0: #8A2BE2;
+    --red-1: #a78bfa;
+    --red-2: #c4b5fd;
+    --red-3: rgba(177, 156, 217, 0.6);
+    --red-4: rgba(216, 194, 240, 0.4);
+    --red-5: rgba(240, 230, 255, 0.2);
+    --red-5-5: rgba(248, 244, 255, 0.1);
+    --red-6: rgba(252, 250, 255, 0.2);
+
+    --color-archive-year: #b19cd9;
+    --color-default: #e0d6ff;
     --color-border: var(--red-5);
-    --color-background: #21252b;
-    --color-code-background: rgba(232, 232, 232, 0.1);
+    --color-background: #1e1b4b;        // 深紫蓝（帕秋莉书房）
+    --color-code-background: rgba(39, 35, 90, 0.6);
     --color-header-background: #222222;
-    --color-footer-background: #21252b;
-    --color-mobile-nav-background: #21252b;
-    --color-wrap: #272b30;
-    --color-h2-border: #47474a;
-    --color-meta-shadow: rgba(0, 0, 0, 0.2);
-    --color-hover-shadow: rgba(0, 0, 0, 0.2);
-    --highlight-nav: unquote(dark-highlight-nav);
-    --highlight-scrollbar: unquote(dark-highlight-scrollbar);
-    --highlight-background: unquote(dark-highlight-background);
-    --highlight-selection: unquote(dark-highlight-selection);
-    --highlight-foreground: unquote(dark-highlight-foreground);
-    --highlight-comment: unquote(dark-highlight-comment);
-    --highlight-red: unquote(dark-highlight-red);
-    --highlight-orange: unquote(dark-highlight-orange);
-    --highlight-yellow: unquote(dark-highlight-yellow);
-    --highlight-green: unquote(dark-highlight-green);
-    --highlight-aqua: unquote(dark-highlight-aqua);
-    --highlight-blue: unquote(dark-highlight-blue);
-    --highlight-purple: unquote(dark-highlight-purple);
-    --highlight-deletion: unquote(dark-highlight-deletion);
-    --highlight-deletion-bg: unquote(dark-highlight-deletion-bg);
-    --highlight-addition: unquote(dark-highlight-addition);
-    --highlight-addition-bg: unquote(dark-highlight-addition-bg);
+    --color-footer-background: #1e1b4b;
+    --color-mobile-nav-background: #27235a;
+    --color-wrap: #27235a;              // 卡片深紫
+    --color-h2-border: #47476a;
+    --color-meta-shadow: rgba(0, 0, 0, 0.3);
+    --color-hover-shadow: rgba(0, 0, 0, 0.3);
+    
+    // 深色模式高亮
+    --highlight-nav: #a78bfa;
+    --highlight-scrollbar: #6a0dad;
+    --highlight-background: #27235a;
+    --highlight-selection: rgba(167, 139, 250, 0.3);
+    --highlight-foreground: #e0d6ff;
+    --highlight-comment: #c4b5fd;
+    --highlight-red: #ff8181;
+    --highlight-orange: #ffad6d;
+    --highlight-yellow: #ffe066;
+    --highlight-green: #3ae6b7;
+    --highlight-aqua: #4dc4d9;
+    --highlight-blue: #4a86e8;
+    --highlight-purple: #a78bfa;
+    --highlight-deletion: #ff8181;
+    --highlight-deletion-bg: rgba(255, 129, 129, 0.15);
+    --highlight-addition: #3ae6b7;
+    --highlight-addition-bg: rgba(58, 230, 183, 0.15);
 
     img {
       filter: brightness(70%);
     }
 
-    // 排除lightbox
     .pswp__img {
       opacity: 1;
       filter: none;
@@ -126,14 +136,17 @@ font-code = unquote(custom-code-families) unquote(code-families) unquote(local-c
 font-size = 14px;
 line-height = 1.67;
 line-height-title = 1.2em;
+
 // Header
 logo-size = 40px;
 subtitle-size = 18px;
 banner-height = 35vh;
 sidebar = postHasSidebar || hexo-config('sidebar');
+
 // Layout
 article-padding = 20px;
 mobile-nav-width = 280px;
+
 // Media queries
 mq-mobile = 'screen and (max-width: 479px)';
 no-mobile = 'screen and (min-width: 480px)';
@@ -144,5 +157,6 @@ mq-large = 'screen and (min-width: 960px)';
 mg-large = 'screen and (max-width: 959px)';
 mq-extra-large = 'screen and (min-width: 1242px)';
 mg-extra-large = 'screen and (max-width: 1241px)';
+
 post-radius = 12px;
 tag-radius = 8px;
